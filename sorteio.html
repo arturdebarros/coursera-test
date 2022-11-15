@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+	function sorteia(n) {
+		return Math.round(Math.random() * (n+10));
+	}
+	var palpite = parseInt(prompt ("Digite seu palpite: "));
+	var sorteado = sorteia(palpite);
+	console.log(sorteado);
+	
+	if (palpite == sorteado) {
+		mostra("Você adivinhou!");
+	}	
+	if (palpite > sorteado) {
+		mostra("O seu palpite é maior que o número sorteado!");
+	}
+	if (palpite < sorteado) {
+		mostra("O seu palpite é menor que o número sorteado!");
+	}
+</script>

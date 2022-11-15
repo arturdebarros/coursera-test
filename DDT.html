@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+//	var pesoArtur = 109;
+//	var alturaArtur = 1.78;
+//	var nomeDoPaciente = "Artur";
+//	var imcArtur = calculaImc(pesoArtur, alturaArtur);
+//	mostra("O paciente " + nomeDoPaciente + " tem o IMC " + imcArtur + ".");
+//	puloLinha();
+	
+	var nome = prompt("Informe seu nome:");
+	var saudade = prompt("Você sentiu saudade dela hoje? (SIM/NÃO)");
+	mostra("Olá, " + nome + "! Você " + saudade + " está com DDT.");
+	puloLinha();
+	
+</script>

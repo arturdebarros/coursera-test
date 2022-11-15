@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+		document.write("<big>");
+		document.write(texto);
+		puloLinha();
+		document.write("</big>");
+	}
+	var minhaIdade = 31;
+	var idadeDoIrmao = 28;
+	var diferencaDeIdade = (minhaIdade-idadeDoIrmao);
+	mostra ("A diferença de idade entre eu e meu irmão é: " + diferencaDeIdade + ".");
+</script>

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+	var anoBase = 2021;
+	mostra("Calopsita");
+	mostra("Artur tem " + (anoBase - 1990) + " anos.");
+	mostra("Antonio tem " + (anoBase - 1946) + " anos.");
+	mostra("Ana tem " + (anoBase - 2002) + " anos.");
+	
+	var idadeArtur = 31;
+	var idadeAntonio = 75;
+	var idadeAna = 19;
+	var media = ((idadeArtur + idadeAntonio + idadeAna)/3);
+
+	mostra("A idade média é " + Math.round(media));
+	
+	var nome = "Artur";
+	
+	mostra("A idade de " + nome + " é " + idadeArtur + ".");
+</script>

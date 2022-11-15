@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+	var anoCopa = 1930;
+	
+	while (anoCopa < 2022) {
+		if (anoCopa == 1942 | anoCopa == 1946) {
+			mostra("Não houve Copa do Mundo em " + anoCopa);
+			anoCopa = (anoCopa + 4);
+		} else {
+			if (anoCopa == 1958 | anoCopa == 1962 | anoCopa == 1970 | anoCopa == 1994 | anoCopa == 2002) {
+				mostra("Teve Copa em " + anoCopa + " e o Brasil foi campeão!");
+			}
+			if (anoCopa == 1930 | anoCopa == 1950) {
+				mostra("Teve Copa em " + anoCopa + " e o Uruguai foi campeão!");
+			}
+			if (anoCopa == 1934 | anoCopa == 1938 | anoCopa == 1982 | anoCopa == 2006) {
+				mostra("Teve Copa em " + anoCopa + " e a Itália foi campeã!");
+			}
+			if (anoCopa == 1954 | anoCopa == 1974 | anoCopa == 1990 | anoCopa == 2014) {
+				mostra("Teve Copa em " + anoCopa + " e a Alemanha foi campeã!");
+			}
+			if (anoCopa == 1978 | anoCopa == 1986) {
+				mostra("Teve Copa em " + anoCopa + " e a Argentina foi campeã!");
+			}
+			
+			if (anoCopa == 1998 | anoCopa == 2018) {
+				mostra("Teve Copa em " + anoCopa + " e a França foi campeã!");
+			}
+			
+			if (anoCopa == 1966) {
+				mostra("Teve Copa em " + anoCopa + " e a Inglaterra foi campeã!");
+			}
+			if (anoCopa == 2010) {
+				mostra("Teve Copa em " + anoCopa + " e a Espanha foi campeã!");
+		}
+		anoCopa = (anoCopa + 4);
+	}
+}
+</script>

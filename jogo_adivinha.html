@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+	var numeroPensado = Math.round(Math.random() * 10);
+	var tentativas = 1;
+	console.log(numeroPensado);
+	
+	while (tentativas <= 3) {
+		var chute = parseInt(prompt ("Digite seu palpite: "));
+		
+		if (chute == numeroPensado) {
+			mostra("Você acertou!");
+			break;
+		} else {		
+			mostra("Errou!");
+			}
+		tentativas++;
+		} mostra("O número pensado foi " + numeroPensado);
+	
+</script>

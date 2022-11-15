@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	var anoAtual = 2021;
+	var anoInicial = 1500;
+	var numeroDeGeracoes = ((anoAtual - anoInicial)/28);
+	mostra ("O número de gerações entre 1500 até 2021 é " + Math.round(numeroDeGeracoes) + ".");
+</script>

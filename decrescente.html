@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+	var numero = 20;
+	while (numero >= 0) {
+		mostra(numero);
+		numero = (numero - 1);
+		
+	}
+	mostra("FIM!");
+</script>

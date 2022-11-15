@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+	function puloLinha() {
+	
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function mostra(texto) {
+	
+		document.write(texto);
+		puloLinha();
+	}
+	
+	var base = 1;
+	var suporte = 1;
+	while (base <= 10) {
+		while (suporte <= 10) {
+			mostra(base + "x" + suporte + "=" + (base * suporte));
+			suporte = suporte + 1;
+			}
+		base = base + 1;
+		suporte = 1;
+		puloLinha();
+	} mostra("FIM!");
+</script>
